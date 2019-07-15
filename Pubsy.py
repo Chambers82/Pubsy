@@ -177,6 +177,10 @@ class Pub:
         pub_text = raw_input("c&p> ")
         self.document.add_heading(title, level=1)
         self.document.add_paragraph(pub_text)
+    
+    def store_paragraph(self, pub_text):
+        #self.document.add_heading(title, level=1)
+        self.document.add_paragraph(pub_text)
 
     def pub_bullets(self):
         bullets = cp_text()
